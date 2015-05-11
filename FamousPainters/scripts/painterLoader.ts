@@ -46,9 +46,11 @@ export class painterLoader {
             });
 
             //Render the painters to the select
+            Init.renderer.renderPainterSummary(summary);
         }
         else {
             //Output a renderer error
+            Init.renderer.renderError();
         }
     }
 

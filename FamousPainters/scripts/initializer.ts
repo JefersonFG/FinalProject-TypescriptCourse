@@ -27,14 +27,15 @@ export function windowOnLoad() {
 }
 
 function loadPainters() {
-    var painterSelect = (<HTMLSelectElement> document.getElementById('painterSelect'));
+    var painterSelect = (<HTMLSelectElement> document.getElementById('PainterSelect'));
     try {
-        var category = painterList.painters
+        var painter = painterList.painters
         //Find selected item by name
             .filter(item => item.name === painterSelect.value)
         //return the item
             .reduce(item => new Painter.painter(painterSelect.value, item.style, item.examplePaintings));
         //Render the item
+        renderer.renderPainterInfo(painter);
     }
     catch (ex) { alert(ex.message) }
 }
