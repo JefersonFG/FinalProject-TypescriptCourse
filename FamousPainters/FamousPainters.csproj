@@ -58,9 +58,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="scripts\initializer.ts" />
     <TypeScriptCompile Include="scripts\main.ts" />
     <TypeScriptCompile Include="scripts\painter.ts" />
+    <TypeScriptCompile Include="scripts\painterList.ts" />
+    <TypeScriptCompile Include="scripts\painterLoader.ts" />
+    <TypeScriptCompile Include="scripts\painterMap.ts" />
     <TypeScriptCompile Include="scripts\painterSummary.ts" />
+    <TypeScriptCompile Include="scripts\renderer.ts" />
     <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="scripts\typings\requirejs\require.d.ts" />
   </ItemGroup>
